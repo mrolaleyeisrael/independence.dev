@@ -7,18 +7,18 @@ import { MdEmail, MdCall } from 'react-icons/md'
 const Intro = () => {
     return (
         <Card>
-            <div className=' flex w-full '>
+            <div className=' flex flex-col text-left md:flex-row w-full '>
 
-                <div className=' w-[271px] rounded-[12px] '>
-                    <Image src={'/images/me.jpg'} alt='' className="rounded-[12px]" width={500} height={500} />
+                <div className=' w-full md:w-[271px] h-auto shrink-0 rounded-[12px] '>
+                    <Image src={'/images/me.jpg'} alt='' className="rounded-[12px] w-full shrink-0" width={271} height={200} />
                 </div>
-                <div className=' px-[33px] '>
-                    <div className=' grow flex flex-row mb-[34px] justify-between '>
+                <div className=' mt-6 md:mt-0 md:px-[33px] '>
+                    <div className=' grow flex flex-col  md:flex-row mb-[34px] md:justify-between '>
                         <div>
-                            <h1 className=' text-[#4F4F4F] text-2xl font-bold  '>Israel Olaleye</h1>
+                            <h1 className=' text-[#4F4F4F] text-2xl font-bold mb-2 '>Israel Olaleye</h1>
                             <p className=' text-lg text-[#828282] '>Front-end developer</p>
                         </div>
-                        <div className=' flex flex-col '>
+                        <div className='  flex flex-col space-y-3 '>
 
                             <div className=' flex  items-center '>
                                 <MdEmail />
